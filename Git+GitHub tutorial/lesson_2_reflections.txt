@@ -1,0 +1,20 @@
+Q: What happens when you initialize a repository? Why do you need to do it?
+A: A hidden, empty git repository is created in the folder.  You must initialise the repository to be able to add and commit files to it.
+
+Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
+A: The working directory is where all files are held on a machine.  The Staging area is files which have specifically been 'add'ed to Git, meaning Git is aware of them and commits will be possible.  The repository contains files which have been committed to source control.  Having the three different areas allows the user to choose which files they want Git to be aware of and which files they commit to the repository.
+
+Q: How can you use the staging area to make sure you have one commit per logical change?
+A: Once a logical change is complete in the working directory, use git add and git commit to check the change into the staging area.
+
+Q: What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+A: If developing features whilst continuing to support an existing application, branches allow development on both streams to continue in parallel.  This way, all changes relating to a feature, or ongoing bug fixes to the master branch are kept together.
+
+Q: How do the diagrams help you visualize the branch structure?
+A: It allows you to see the order of edits across the selected branches
+
+Q: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+A: The full commit history is merged into the merge branch from the sub-branch.  A new commit is created in the merge branch for the combined commit.  The old branch label can be removed, the history is retained and appears in within timestamp order with the merge branch commits.
+
+Q: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+A: When merging without conflicts, Git can automatically merge which is quicker than manually reviewing and combining files.  When there are conflicts, manually checking with always be needed to determine a resolution.

@@ -1,0 +1,19 @@
+Q: When would you want to use a remote repository rather than keeping all your work local?
+A: When you are working collaboratively on a project, or when you want somewhere to host work for it to be accessible by others.
+
+Q: Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+A: You might still be working on a feature so arent yet ready to merge in other updates.
+
+Q: Describe the differences between forks, clones, and branches. When would you use one instead of another?
+A: Forking only works on GitHub and allows cloning of a GitHub repository to your own GitHub account.
+Cloning allows you to download a GitHub repository to your local machine where it will be easier to edit.
+Branches allow code to be split so e.g. changes can be worked on in isolation from the master working branch.
+
+Q: What is the benefit of having a copy of the last known state of the remote stored locally?
+A: It gives a baseline from which to see all of the changes that have taken place since last remote interaction, whilst leaving the working copy unchanged.  By updating remote using git fetch, you are then able to use git log and git diff locally to see what changes have been introduced.  Note: these do not need to be acted on straight away.
+
+Q: How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+A: To get changes reviewed and merged, you could review changes on your local environment with a reviewer, but this would require a share screen or someone physically being in the same room.  Where changes are required, assuming someone is available to review, it would be quick to discuss these in person, but a log of changes would not be kept and if the team was busy, processing reviews efficiently would be hard to juggle.
+
+Q: When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+A: e.g. when creating a new feature.  It allows fixes/work to continue in the master branch in parallel with feature development, both branches in isolation from the other until a fetch/merge/pull is performed.
