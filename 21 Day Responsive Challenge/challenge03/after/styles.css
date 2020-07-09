@@ -13,23 +13,26 @@ body {
 
 .hero {
     margin:0;
-    padding:2em;
+    padding: 4em 0;
     background-color: #23424A;
 }
 
-@media (min-width: 45rem) {
-
-    .hero {
-        padding:4em;
-    }
-} 
-
-.hero__container {
-    width: 80%;
+.container {
+    margin: 0 auto;
     color: white;
-    margin:0;
     padding:0;
-    max-width: 750px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.hero__text {
+    width: 100%;
+}
+
+@media (min-width: 40rem) {
+    .hero__text {
+        width: 60%;
+    }
 }
 
 .hero__title {
