@@ -8,56 +8,50 @@ body {
     margin:0;
     font-family: 'Roboto', sans-serif;
     background: #E5E5E5;
+    font-size: 1.3rem;
 }
 
-.header-blue {
+.hero {
     margin:0;
     padding:2em;
-    width: 100%;
-    border: 0;
     background-color: #23424A;
 }
 
 @media (min-width: 45rem) {
 
-    .header-blue {
-        padding:7em;
+    .hero {
+        padding:4em;
     }
-}
+} 
 
-.header-container {
-    width: 44em;
+.hero__container {
+    width: 80%;
     color: white;
-    max-width:90%;
+    margin:0;
+    padding:0;
+    max-width: 750px;
 }
 
-@media (min-width: 45rem) {
-
-    .header-container {
-        max-width: 50%;
-    }
-}
-
-.header-title {
+.hero__title {
     font-weight: 900;
     font-size: 3rem;
     margin:0;
 }
 
-.header-paragraph {
+.hero__paragraph {
     font-weight: 400;
     font-size: 1.3125rem;
     line-height: 1.5em;
 }
 
-.header-button {
+.hero__button {
     background-color: #38CFD9;
+    display: inline-block;
     padding: 0.8em 2.2em;
     margin-top: 1em;
-    border: 0;
-    outline: 0;
     border-radius: 1.25em;
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: 700;
     font-size: 1.3125rem;
     color: #23424A;
